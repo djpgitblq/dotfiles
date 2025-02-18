@@ -73,6 +73,13 @@ outer.bottom =     5
 outer.top =        [{ monitor."built-in" = 5 }, 40]
 outer.right =      5
 
+[workspace-to-monitor-force-assignment]
+6 = ['HP E27u G5','LG HDR 4K']
+
+[[on-window-detected]]
+    if.app-id = 'uk.co.tla-systems.pcalc'
+    run = 'layout floating'
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
@@ -129,10 +136,6 @@ alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
 alt-5 = 'workspace 5'
-alt-6 = 'workspace 6'
-alt-7 = 'workspace 7'
-alt-8 = 'workspace 8'
-alt-9 = 'workspace 9'
 alt-a = 'workspace A' 
 alt-b = 'workspace B'
 alt-c = 'workspace C'
@@ -164,9 +167,6 @@ alt-shift-3 = 'move-node-to-workspace 3'
 alt-shift-4 = 'move-node-to-workspace 4'
 alt-shift-5 = 'move-node-to-workspace 5'
 alt-shift-6 = 'move-node-to-workspace 6'
-alt-shift-7 = 'move-node-to-workspace 7'
-alt-shift-8 = 'move-node-to-workspace 8'
-alt-shift-9 = 'move-node-to-workspace 9'
 alt-shift-a = 'move-node-to-workspace A'
 alt-shift-b = 'move-node-to-workspace B'
 alt-shift-c = 'move-node-to-workspace C'
@@ -199,6 +199,12 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 alt-shift-semicolon = 'mode service'
 alt-f3 = ['mode service', 'layout floating tiling', 'mode main' ]
 
+ctrl-alt-cmd-h = ['mode service', 'join-with left', 'mode main']
+ctrl-alt-cmd-j = ['mode service', 'join-with down', 'mode main']
+ctrl-alt-cmd-k = ['mode service', 'join-with up', 'mode main']
+ctrl-alt-cmd-l = ['mode service', 'join-with right', 'mode main']
+
+
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
@@ -209,11 +215,6 @@ backspace = ['close-all-windows-but-current', 'mode main']
 
 # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
 #s = ['layout sticky tiling', 'mode main']
-
-alt-shift-h = ['join-with left', 'mode main']
-alt-shift-j = ['join-with down', 'mode main']
-alt-shift-k = ['join-with up', 'mode main']
-alt-shift-l = ['join-with right', 'mode main']
 
 down = 'volume down'
 up = 'volume up'

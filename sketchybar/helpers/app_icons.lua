@@ -2,6 +2,7 @@ return {
 	["PCalc"] = ":calculator:",
 	["Activity Monitor"] = ":activity_monitor:",
 	["Quicken"] = ":sketch:",
+	["DBeaver"] = ":dbeaver:",
 	["Live"] = ":ableton:",
 	["Adobe Bridge"] = ":adobe_bridge:",
 	["Affinity Designer"] = ":affinity_designer:",

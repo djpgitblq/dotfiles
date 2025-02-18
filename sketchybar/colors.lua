@@ -20,7 +20,7 @@ local primitives = {
   crystal_blue = 0xFF7E9CD8,
   spring_violet_2 = 0xFF9CABCA,
   ronin_yellow = 0xFFFF9E3B,
-
+  green = 0xff9ed072,
   transparent = 0x00000000,
 }
 return {
@@ -55,10 +55,10 @@ return {
 
   workspaces = {
     icon = with_alpha(primitives.white, 0.4),
-    icon_focused = primitives.white,
+    icon_focused = primitives.green,
 
     label = with_alpha(primitives.white, 0.8),
-    label_focused = primitives.white,
+    label_focused = primitives.green,
 
     item_background = primitives.transparent,
     item_background_focused = with_alpha(primitives.white, 0.1),

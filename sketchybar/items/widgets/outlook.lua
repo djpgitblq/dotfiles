@@ -50,6 +50,12 @@ outlook:subscribe({"routine", "system_woke"}, function()
   end)
 end)
 
+
+outlook:subscribe("mouse.clicked", function(env)
+  sbar.exec("open -a 'Microsoft Outlook'")
+end)
+
+
 sbar.add("bracket", "widgets.outlook.bracket", { outlook.name }, {
   background = { color = colors.bg1 }
 })

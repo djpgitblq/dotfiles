@@ -51,6 +51,11 @@ teams:subscribe({"routine", "system_woke"}, function()
   end)
 end)
 
+teams:subscribe("mouse.clicked", function(env)
+  sbar.exec("open -a 'Microsoft Teams'")
+end)
+
+
 sbar.add("bracket", "widgets.teams.bracket", { teams.name }, {
   background = { color = colors.bg1 }
 })
